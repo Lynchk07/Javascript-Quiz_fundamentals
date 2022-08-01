@@ -1,16 +1,17 @@
-// Hide starting div
+// variables for starting page 
 var mainEl = document.querySelector(".title")
 var startButton = document.querySelector(".start")
 var que = 0
+var quiz = document.querySelector(".question_text")
 
 //Function for the start button - start button and information are on one page
 startButton.addEventListener("click",function(){
-    mainEl.setAttribute("class","hide")
-    classList.remove("class","title")
+    mainEl.setAttribute("class","start_hide")
+    quiz.removeAttribute("class","start_hide")
     quizQuestions()
 })
 
-// button a timer starts
+// click start button a timer starts
     //style:timer in the right hand corner
     var count=20;
     var interval=setInterval(function(){
@@ -53,9 +54,9 @@ function quizQuestions(){
     questions[que].options.forEach(function(options)
     {
         var btn = document.createElement("button")
-        btn.textContent = options;
-        btn.setAttribute("value",options);
-        btn.onclick = evaluateAnswer;
+        btn.textContent = options
+        btn.setAttribute("value",options)
+        btn.onclick = evaluateAnswer
         document.querySelector(".answers").appendChild(btn)
     })
 }
