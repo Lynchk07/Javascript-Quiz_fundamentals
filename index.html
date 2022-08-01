@@ -5,34 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Countdown Javascript Quiz</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    
 </head>
 <body>
+   
+<main>
     <!--Header-->
-    <h1>Javascript Quiz</h1>
-    <!--start quiz button-->
-   <button id="start">Start </button>
-<!--countdown timer-->
-<h2 id="timer" style = "text-align: right;"></h2>
-   <!--Form box_ questions-->
-   <div class="quiz_section">
-    <div class= "quiz_title">Javascript</div></di>
-   </div>
-
-            <div class="question_list">
-                <div class="Q_A">Question 1</div> 
-                <div class="Q_B">Question 1</div>
-                <div class="Q_C">Question 1</div>
-                <div class="Q_D">Question 1</div>
-                <div class="Q_E">Question 1</div>
-   </div>
-   </div>
-   <button class = "buttons"> Yes</button>
-   <button class = "buttons"> Yes</button>
-   <button class = "buttons"> Yes</button>
-   <button class = "buttons"> Yes</button>
-
+    
+    <div class="title">
+        <h1>Javascript Fundamentals Quiz</h1>
+        <p>Try to answer all the questions before the timer goes off! Log your highscore!</p>
+    </div>
+        
+   <!--Start Quiz Button-->
+   <div>
+        <button class="start">Start</button>
+        <!--highs score hyperlink that pops into a different web browser-->
+        <!-- <button class="high_btn" href="/highscores.html">High Scores</button>  -->
+  </div>
+        <div class ="quiz_hide">
+            <h1 class="question_text"></h1>
+            <div class ="answers"></div>
+        </div>
+    <div class="end_hide"></div>
+    <p id="count"></p>
+</main>
 <!--Javascript link-->
-    <script src = "./script.js"></script>
+    <script src = "./assets/script.js"></script>
 </body>
 </html>
