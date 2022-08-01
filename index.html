@@ -12,24 +12,26 @@
    
 <main>
     <!--Header-->
-    
-    <div class="title">
+    <nav id="count" class="flex-column flex center"></nav>
+    <div class="container">
+        <div id="home" class="flex-column flex-center">
         <h1>Javascript Fundamentals Quiz</h1>
         <p>Try to answer all the questions before the timer goes off! Log your highscore!</p>
-    </div>
-        
+
    <!--Start Quiz Button-->
    <div>
         <button class="start">Start</button>
-        <!--highs score hyperlink that pops into a different web browser-->
-        <!-- <button class="high_btn" href="/highscores.html">High Scores</button>  -->
+    <!--highs score hyperlink that pops into a different web browser-->
+        <button class="high_btn" href="/highscores.html">High Scores</button>
   </div>
         <div class ="quiz_hide">
             <h1 class="question_text"></h1>
             <div class ="answers"></div>
         </div>
     <div class="end_hide"></div>
-    <p id="count"></p>
+    </div>
+</div>
+    
 </main>
 <!--Javascript link-->
     <script src = "./assets/script.js"></script>

@@ -6,7 +6,7 @@ var que = 0
 //Function for the start button - start button and information are on one page
 startButton.addEventListener("click",function(){
     mainEl.setAttribute("class","hide")
-   quiz.removeAttribute("class","hide")
+    classList.remove("class","title")
     quizQuestions()
 })
 
