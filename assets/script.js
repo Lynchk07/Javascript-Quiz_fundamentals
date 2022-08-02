@@ -65,7 +65,7 @@ var questions = [
     },
 ]
 
-//Question Functions 
+//Question Functions that loop throught the quiz questions  
 function startNextQuestion() {
     document.querySelector("#quiz-question").textContent = questions[qi].text
     document.querySelector("#answerbuttons").innerHTML = ""
@@ -81,6 +81,7 @@ function startNextQuestion() {
     })
 }
 
+// evaluate answer section
 function evaluateAnswer() {
     console.log(questions[qi].answer)
     console.log(this.value);

@@ -4,7 +4,7 @@
     font-weight: bold;
 
 }
-
+/*default styling*/
 body {
    
     padding: 0;
@@ -17,6 +17,7 @@ body {
     background-color: lightblue;
 }
 
+/*styles the quiz container*/
 .container {
     width:800px;
     max-width: 75%;
@@ -31,14 +32,14 @@ body {
     margin-bottom: 50px;
     font-size: 25px;
 }
-
+/*quiz question and answer styling*/
 .btn-grid {
     display:grid;
     grid-template-columns: repeat(2, auto);
     gap: 10px;
     margin: 5px;
 }
-
+/*button styling*/
 .btn {
     background-color: lightblue;
     border: gray;
