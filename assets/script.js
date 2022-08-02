@@ -98,15 +98,4 @@ function evaluateAnswer() {
 var quiz = document.querySelector(".quiz-question")
 
 //highscore function
-function highscore() {
-    var score = 0;
-    var interval = setInterval(function () {
-        document.getElementById('score').innerHTML = count;
-        count++;
-        if (count === 100) {
-            clearInterval(interval);
-            document.getElementById('score').innerHTML = "Completed!";
-            alert("YOU WON!");
-        }
-    }, 1000);
-}
+//function highscore() 
