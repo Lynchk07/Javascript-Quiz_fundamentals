@@ -62,7 +62,7 @@ body {
     justify-content: center;
     align-items: center;
 }
-
+/*hides the next button and first question/answer section - ran out of time to write javascript code functions*/
 .hide {
     display:none;
 }

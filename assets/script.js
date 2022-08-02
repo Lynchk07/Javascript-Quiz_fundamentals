@@ -23,7 +23,7 @@ startButton.addEventListener("click", function () {
 //style:timer in the right hand corner
 
 function startNextQuestionTIMER() {
-    var count = 20;
+    var count = 10;
     var interval = setInterval(function () {
         document.getElementById('count').innerHTML = count;
         count--;
